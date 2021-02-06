@@ -18,7 +18,7 @@ const SequelizeStore = require('connect-session-sequelize')(session.Store);
 const sess = {
   secret: '!@#$%^&*0987654321',
   resave: true,
-  rolling: true,
+
   saveUninitialized: true,
   store: new SequelizeStore({
     db: sequelize
